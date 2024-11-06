@@ -27,9 +27,6 @@
                             Pet Tips</a></li>
                     <li><a href="#" class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out">How to
                             help?</a></li>
-                    <!-- <li><a href="#"
-                            class="text-white  hover:bg-pink-700 transition duration-300 ease-in-out bg-pink-600 px-4 py-2 rounded-full font-bold">Members</a>
-                    </li> -->
                     <li><a href="#"
                             class="text-pink-600 hover:text-white  hover:bg-pink-600 transition duration-300 ease-in-out border-pink-600 border-2 px-4 py-2 rounded-full font-bold">Members</a>
                     </li>
@@ -38,22 +35,43 @@
         </div>
     </div>
     <!-- header mobile -->
+    <!-- contenedor de todo el menu -->
     <div class="md:hidden w-full fixed top-0 bg-white z-50 bg-opacity-80 backdrop-blur-sm">
         <div class="h-20 flex items-center justify-between mx-auto">
-            <!-- icono -->
-            <div class="h-20  w-20 flex items-center justify-center cursor-pointer">
+            <!-- Icono que activa el menú -->
+            <label for="menu-toggle" class="h-20 w-20 flex items-center justify-center cursor-pointer">
                 <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
                     </path>
                 </svg>
-            </div>
+            </label>
             <div class="h-20 w-20">
-                <!-- logo -->
+                <!-- Logo -->
                 <img src="./assets/logoNoahsArk.svg" alt="logo" class="h-20">
             </div>
         </div>
     </div>
+    <!-- input oculto que controla el modal -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer">
+    <!-- modal del menu, solo visible cuando el checkbox esta activado -->
+    <div class="fixed inset-0  z-40 hidden peer-checked:block">
+        <div
+            class="bg-gray-900 bg-opacity-30 backdrop-blur-md w-full h-full flex flex-col items-center justify-center space-y-4">
+            <ul class="space-y-12 text-center text-2xl">
+                <li><a href="#" class="text-white hover:text-pink-500 transition duration-300 ease-in-out">Reunite
+                        Tips</a></li>
+                <li><a href="#" class="text-white hover:text-pink-500 transition duration-300 ease-in-out">Found Pet
+                        Tips</a></li>
+                <li><a href="#" class="text-white hover:text-pink-500 transition duration-300 ease-in-out">How to
+                        help?</a></li>
+                <li><a href="#"
+                        class="text-pink-500 hover:text-white hover:bg-pink-600 transition duration-300 ease-in-out border-pink-500 border-2 px-4 py-2 rounded-full font-bold">Members</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <!-- section 1 banner -->
     <div class="w-full max-h-[700px] min-h-[700px] flex  items-center justify-center text-white"
         style="background-image: url('./assets/dogBackground.jpg'); background-size: cover; background-position: center;">
@@ -151,7 +169,7 @@
         </div>
     </div>
     <!-- section 4 3 boxes -->
-    <div class=" w-full min-h-[500px] p-10 ">
+    <div class=" w-full min-h-[500px] p-5 sm:p-10 ">
         <div class="h-1/5  flex items-center justify-center mb-5">
             <label class="text-3xl" for="">Don't have account yet?</label>
         </div>
@@ -186,7 +204,7 @@
                 </div>
                 <div class="h-2/6 text-xl text-center flex items-end">Connecting Pet Finders and Pet OWners Reuniting
                     Pets</div>
-            </div>            
+            </div>
         </div>
     </div>
     <!-- section 5 text more img -->

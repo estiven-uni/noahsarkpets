@@ -174,169 +174,25 @@
     </div>
     <!-- section 1 banner -->
     <div class="w-full max-h-[700px] min-h-[700px] flex  items-center justify-center text-white"
-        style="background-image: url('./assets/dogBackground.jpg'); background-size: cover; background-position: center;">
+        style="background-image: url('./assets/dog3.jpg'); background-size: cover; background-position: center;">
         <div
-            class="bg-gray-800 bg-opacity-30 shadow-md backdrop-blur-sm w-[850px] min-h-[300px] p-5 sm:p-10 text-center flex flex-col gap-5 rounded-xl mx-5">
+            class="bg-gray-100 bg-opacity-40 shadow-md backdrop-blur-sm w-[850px] min-h-[300px] p-5 sm:p-10 text-center flex flex-col gap-5 rounded-xl mx-5">
             <label class="text-3xl sm:text-5xl text-center font-bold">
-                Your Partner in Lost & Found Pets
+                Where are you located?
             </label>
             <div class="sm:px-20">
-                <label class="text-lg sm:text-xl text-center text-gray-200">
-                    Noah’s Ark Pet Connect makes it easy to find lost pets and offers rewards to help bring them home.
+                <label class="text-lg sm:text-xl text-center text-white">
+                    You may provide the specific address. We will never share your exact location.
                 </label>
             </div>
-            <div class=" flex gap-5 justify-center">
-                <button
-                    class="bg-pink-500 text-white font-bold py-4 px-4 rounded-full hover:bg-pink-600 transition-transform transform hover:scale-105 hover:shadow-lg">Lost
-                    Pet
-                </button>
-                <button
-                    class="bg-pink-500 text-white font-bold py-4 px-4 rounded-full hover:bg-pink-600 transition-transform transform hover:scale-105 hover:shadow-lg">Found
-                    Pet
-                </button>
+            <div class="sm:px-20">                
+                <input type="text"
+                    class="h-12 bg-white bg-opacity-50 rounded-full p-2 w-full placeholder:text-center border-none focus:ring-2 focus:ring-pink-600 placeholder:text-gray-500 text-gray-800 px-4"
+                    placeholder="Search location (city, state, or Zip)">
             </div>
+            <label class="text-xl text-pink-600 hover:text-pink-700 cursor-pointer underline">Use current
+                location</label>
         </div>
-    </div>
-    <!-- section 2 galery img -->
-    <div class="w-full h-[500px] flex flex-col justify-center  gap-5 my-10">
-        <div class="flex flex-col text-center ">
-            <label class="text-xl sm:text-2xl" for="">Reunite Memories</label>
-            <label class="text-3xl sm:text-6xl font-bold" for="">Love <span class="font-normal">Reunited</span></label>
-        </div>
-        <!-- galerry poner aqui -->
-        <div class="h-full rounded-xl max-w-7xl mx-auto flex flex-col gap-5">
-            <div class="flex justify-between items-center ">
-                <!-- next -->
-                <div class="mx-1 ">
-                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="12" r="12" fill="currentColor" />
-                        <path d="M9 12L15 8V16L9 12Z" fill="white" />
-                    </svg>
-                </div>
-                <!-- galery -->
-                <div class="overflow-x-scroll grid grid-cols-1 rounded-lg">
-                    <div class="grid grid-cols-3 max-h-96 min-w-[1184px] max-w-[1184px] pb-2">
-                        <div class="flex flex-col items-center max-w-96 min-w-96 ">
-                            <img src="./assets/dog2.jpg" alt="Pet 1" class="w-[330px] h-72 object-cover rounded-lg">
-                            <p class="mt-2 text-gray-800">Name + Pet Name Little Stories about the reunite.</p>
-                        </div>
-                        <div class="flex flex-col items-center max-w-96 min-w-96 ">
-                            <img src="./assets/dog3.jpg" alt="Pet 2" class="w-[330px] h-72 object-cover rounded-lg">
-                            <p class="mt-2 text-gray-800">Name + Pet Name Little Stories about the reunite.</p>
-                        </div>
-                        <div class="flex flex-col items-center max-w-96 min-w-96 ">
-                            <img src="./assets/dogBackground.jpg" alt="Pet 3"
-                                class="w-[330px] h-72 object-cover rounded-lg">
-                            <p class="mt-2 text-gray-800">Name + Pet Name Little Stories about the reunite.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- back -->
-                <div class="mx-1">
-                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="12" r="12" fill="currentColor" />
-                        <path d="M15 12L9 16V8L15 12Z" fill="white" />
-                    </svg>
-                </div>
-            </div>
-            <!-- tres puntos  -->
-            <div class="flex justify-center">
-                <!-- Navigation Dots -->
-                <div class="flex space-x-2">
-                    <div for="slide1"
-                        class="w-3 h-3 bg-gray-400 rounded-full cursor-pointer hover:bg-gray-700 transition"></div>
-                    <div for="slide2"
-                        class="w-3 h-3 bg-gray-400 rounded-full cursor-pointer hover:bg-gray-700 transition"></div>
-                    <div for="slide3"
-                        class="w-3 h-3 bg-gray-400 rounded-full cursor-pointer hover:bg-gray-700 transition"></div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- section 3 text more img -->
-    <div class="w-full min-h-[700px] grid grid-cols-1 sm:grid-cols-2 justify-center">
-        <div class="bg-gray-100 p-10 flex flex-col gap-5 justify-center">
-            <label class="text-xl">It takes a village</label>
-            <label class="text-6xl">Help pets get home</label>
-            <label class="text-xl">
-                Want to help reunite lost and found pets? Search all pets that have been reported on Petco Love Lost
-                using the link below. Then create an account to easily message pet parents from our site.
-            </label>
-            <label class="text-xl text-pink-500 hover:text-pink-700 cursor-pointer">Search All Lost & Found Pets</label>
-        </div>
-        <div class="bg-gray-800 min-h-[400px] sm:h-auto"
-            style="background-image: url('./assets/imageHome1.png'); background-size: cover; background-position: center;">
-        </div>
-    </div>
-    <!-- section 4 3 boxes -->
-    <div class=" w-full min-h-[500px] p-5 sm:p-10 ">
-        <div class="h-1/5  flex items-center justify-center mb-5">
-            <label class="text-3xl font-semibold" for="">Don't have account yet?</label>
-        </div>
-        <div class="min-h-4/5 max-h-4/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-7xl mx-auto">
-            <div
-                class="bg-gray-100 rounded-lg p-5 max-w-80 mx-auto h-[272px] transition-transform transform hover:scale-105 hover:shadow-lg">
-                <div class="h-4/6 flex items-center justify-center">
-                    <img src="./assets/logoDonate.svg" alt="">
-                </div>
-                <div class="h-2/6 text-xl text-center flex items-end">Animal Rescues, Shelters, Services</div>
-            </div>
-            <div
-                class="bg-gray-100 rounded-lg p-5 max-w-80 mx-auto h-[272px]  transition-transform transform hover:scale-105 hover:shadow-lg">
-                <div class="h-4/6 ">
-                    <div class="h-1/2  flex items-center justify-center">
-                        <img src="./assets/logoMarket.svg" alt="">
-                    </div>
-                    <div class="h-1/2  flex justify-center items-center">
-                        <img src="./assets/logoPetgoods.svg" alt="">
-
-                    </div>
-                </div>
-                <div class="h-2/6 text-xl text-center flex items-end">Pet Owners? Looking for Supplies?</div>
-            </div>
-            <div
-                class="bg-gray-100 rounded-lg p-5 max-w-80 mx-auto h-[272px] transition-transform transform hover:scale-105 hover:shadow-lg">
-                <div class="h-4/6 flex items-center justify-center">
-                    <img src="./assets/logoDonate.svg" alt="">
-                </div>
-                <div class="h-2/6 text-xl text-center flex items-end">Animal Rescues, Shelters, Services</div>
-            </div>
-            <div
-                class="bg-gray-100 rounded-lg p-5 max-w-80 mx-auto h-[272px]  transition-transform transform hover:scale-105 hover:shadow-lg">
-                <div class="h-4/6 flex">
-                    <div class="w-1/2 flex items-center justify-center">
-                        <img src="./assets/logoNoahsArk.svg" alt="">
-                    </div>
-                    <div class="w-1/2  flex flex-col  gap-2 justify-center items-center ">
-                        <img src="./assets/appStore.svg" alt="">
-                        <img src="./assets/googlePlay.svg" alt="">
-                    </div>
-                </div>
-                <div class="h-2/6 text-xl text-center flex items-end">Connecting Pet Finders and Pet OWners Reuniting
-                    Pets</div>
-            </div>
-        </div>
-    </div>
-    <!-- section 5 text more img -->
-    <div class="w-full min-h-[700px] grid grid-cols-1 sm:grid-cols-2 sm:grid-flow-dense">
-        <div class="order-2 sm:order-1 bg-gray-800 min-h-[400px] sm:h-auto"
-            style="background-image: url('./assets/imageHome2.png'); background-size: cover; background-position: center;">
-        </div>
-        <div class="order-1 sm:order-2 bg-gray-100 p-10 flex flex-col gap-5 justify-center">
-            <label class="text-xl">Reunion Stories</label>
-            <label class="text-6xl">Love Reunited</label>
-            <label class="text-xl">
-                Want to help reunite lost and found pets? Search all pets that have been reported on Petco Love Lost
-                using the link below. Then create an account to easily message pet parents from our site.
-            </label>
-            <label class="text-xl text-pink-500 hover:text-pink-700 cursor-pointer">Search All Lost & Found Pets</>
-        </div>
-    </div>
-    <!-- section 6 iframe -->
-    <div class="bg-gray-200 w-full h-[600px] grid grid-cols-1 justify-center">
-        <iframe width="100%" height="600px" src="https://petgoods.cc/product/calf-calmr-pellets"
-            style="border: 1px solid black"></iframe>
     </div>
     <!-- footer -->
     <div class=" w-full  bg-gray-100">

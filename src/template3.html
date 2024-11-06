@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body class="text-gray-800 bg-white">
+    <!-- header desktop -->
+    <div class="hidden md:block w-full fixed top-0 bg-white z-50 bg-opacity-80 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl h-20 flex items-center justify-between mx-auto px-10">
+            <!-- icono -->
+            <div class="">
+                <img src="./assets/logoNoahsArk.svg" alt="logo" class="h-20">
+            </div>
+            <!-- nav -->
+            <nav class="">
+                <ul class="flex items-center justify-center space-x-8">
+                    <li>
+                        <a href="#"
+                            class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                            <span class="mr-2">
+                                <!-- Icono para Reunite Tips -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a7 7 0 0 0-7 7c0 1.223.462 2.403 1.23 3.303.228.189.44.416.63.65C3.343 11.473 4 12.21 4 13v1a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-1c0-.79-.657-1.527-1.14-2.047.19-.234.402-.461.63-.65C14.538 9.403 15 8.223 15 7a7 7 0 0 0-7-7zm-1 7a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3zm5.854-.146a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708l2.5-2.5a.5.5 0 0 1 .708 0z" />
+                                </svg>
+                            </span>
+                            Reunite Tips
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                            <span class="mr-2">
+                                <!-- Icono para Found Pet Tips -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-paw" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 2c0 .55-.45 1-1 1S2 2.55 2 2s.45-1 1-1 1 .45 1 1zM12 2c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zM8 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 9c0 .55-.45 1-1 1S2 9.55 2 9s.45-1 1-1 1 .45 1 1zm8 0c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zm-4 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                            </span>
+                            Found Pet Tips
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                            <span class="mr-2">
+                                <!-- Icono para How to Help -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zM8 15a7 7 0 1 1 7-7A7 7 0 0 1 8 15zM8 4a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h1zm0 3.5a.5.5 0 0 0 .5-.5V7a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.5a.5.5 0 0 0 .5.5h1z" />
+                                </svg>
+                            </span>
+                            How to help?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-pink-600 hover:text-white hover:bg-pink-600 transition duration-300 ease-in-out border-pink-600 border-2 px-4 py-2 rounded-full font-bold flex items-center">
+                            <span class="mr-2">
+                                <!-- Icono para Members -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3 14s-1 0-1-1 1-1 1-1h10s1 0 1 1-1 1-1 1H3zm5-6a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0 1c-2.071 0-4 1.029-4 3v1h8v-1c0-1.971-1.929-3-4-3z" />
+                                </svg>
+                            </span>
+                            Members
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+    <!-- header mobile contenedor de todo el menu -->
+    <div class="w-full px-2 fixed top-4 z-50">
+        <div class="md:hidden w-full bg-white  bg-opacity-80 backdrop-blur-sm shadow-md rounded-full ">
+            <div class="h-20 flex flex-row-reverse items-center justify-between mx-auto px-6">
+                <!-- Icono que activa el menú -->
+                <label for="menu-toggle" class="h-20 w-20 flex items-center justify-end cursor-pointer">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7">
+                        </path>
+                    </svg>
+                </label>
+                <div class="h-20 w-20">
+                    <!-- Logo -->
+                    <img src="./assets/logoNoahsArk.svg" alt="logo" class="h-20">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header mobile input oculto que controla el modal -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer">
+    <!-- header mobile modal del menu, solo visible cuando el checkbox esta activado -->
+    <div class="fixed inset-0 z-40 hidden peer-checked:block">
+        <div
+            class="bg-gray-200 bg-opacity-60 backdrop-blur-md w-full h-full flex flex-col items-center justify-center space-y-4">
+            <ul class="space-y-12 text-center text-2xl">
+                <li>
+                    <a href="#"
+                        class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                        <span class="mr-2">
+                            <!-- Icono para Reunite Tips -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a7 7 0 0 0-7 7c0 1.223.462 2.403 1.23 3.303.228.189.44.416.63.65C3.343 11.473 4 12.21 4 13v1a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-1c0-.79-.657-1.527-1.14-2.047.19-.234.402-.461.63-.65C14.538 9.403 15 8.223 15 7a7 7 0 0 0-7-7zm-1 7a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3zm5.854-.146a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708l2.5-2.5a.5.5 0 0 1 .708 0z" />
+                            </svg>
+                        </span>
+                        Reunite Tips
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                        <span class="mr-2">
+                            <!-- Icono para Found Pet Tips -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-paw" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 2c0 .55-.45 1-1 1S2 2.55 2 2s.45-1 1-1 1 .45 1 1zM12 2c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zM8 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 9c0 .55-.45 1-1 1S2 9.55 2 9s.45-1 1-1 1 .45 1 1zm8 0c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zm-4 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                            </svg>
+                        </span>
+                        Found Pet Tips
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                        <span class="mr-2">
+                            <!-- Icono para How to Help -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zM8 15a7 7 0 1 1 7-7A7 7 0 0 1 8 15zM8 4a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h1zm0 3.5a.5.5 0 0 0 .5-.5V7a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.5a.5.5 0 0 0 .5.5h1z" />
+                            </svg>
+                        </span>
+                        How to help?
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-pink-500 hover:text-white hover:bg-pink-500 transition duration-300 ease-in-out border-pink-500 border-2 px-4 py-2 rounded-full font-bold flex items-center">
+                        <span class="mr-2">
+                            <!-- Icono para Members -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3 14s-1 0-1-1 1-1 1-1h10s1 0 1 1-1 1-1 1H3zm5-6a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0 1c-2.071 0-4 1.029-4 3v1h8v-1c0-1.971-1.929-3-4-3z" />
+                            </svg>
+                        </span>
+                        Members
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- section 1 text more img -->
+    <div class="w-full min-h-[700px] grid grid-cols-1 sm:grid-cols-2 justify-center mt-20 mb-10 sm:mb-0">
+        <div class="bg-gray-100 p-10 flex flex-col gap-5 justify-center">
+            <label class="text-xl">It takes a village</label>
+            <label class="text-6xl">Help pets get home</label>
+            <!-- <label class="text-xl">
+                Want to help reunite lost and found pets? Search all pets that have been reported on Petco Love Lost
+                using the link below. Then create an account to easily message pet parents from our site.
+            </label> -->
+            <label class="text-xl text-pink-500 hover:text-pink-700 cursor-pointer">Search All Lost & Found Pets</label>
+        </div>
+        <div class="min-h-[200px] pb-20 pt-5 lg:p-20 relative ">
+            <div class=" bg-center bg-no-repeat bg-contain h-full"
+                style="background-image: url('./assets/phonesTemplate3.png');">
+            </div>
+            <div class="w-full h-auto absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col px-5 sm:px-0 ">
+                <div class="h-1/4 flex items-center justify-center">
+                    <label class="text-gray-800 text-xl text-center">Download App</label>
+                </div>
+                <div class="h-3/4 flex items-center justify-center ">
+                    <div class="grid grid-cols-2 items-center ">
+                        <img src="./assets/appStore.svg" class="">
+                        <img src="./assets/googlePlay.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section 2 galery img -->
+    <div class="w-full h-auto flex flex-col justify-center  gap-5 py-10">
+        <div class="flex flex-col text-center ">
+            <label class="text-xl sm:text-2xl" for="">How to take action?</label>
+            <label class="text-3xl sm:text-5xl font-bold px-5" for="">We’re here to help your lost pet find their way
+                home</label>
+        </div>
+        <!-- galerry poner aqui -->
+        <div class="min-h-4/5 max-h-4/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-7xl mx-auto">
+            <div
+                class="bg-gray-100 rounded-lg p-5 max-w-80 mx-auto h-[272px] transition-transform transform hover:scale-105 hover:shadow-lg">
+                <div class="h-3/6 flex items-center justify-center">
+                    <img src="./assets/tm3/tm1.svg" alt="">
+                </div>
+                <div class="h-1/6 text-lg font-bold text-center flex items-end">Report the Lost Pet</div>
+                <div class="h-2/6 text-[11px]">
+                    <label class="text-gray-500">
+                        Start by Uploading a Photo of Your Pet
+                        Share a few details, and we'll use image recognition to help find your pet across the country.
+                        Stay
+                        connected with local shelters and be ready to respond to any sightings.
+                    </label>
+                </div>
+            </div>
+            <div
+                class="bg-gray-100 rounded-lg p-5 max-w-80 mx-auto h-[272px] transition-transform transform hover:scale-105 hover:shadow-lg">
+                <div class="h-3/6 flex items-center justify-center">
+                    <img src="./assets/tm3/tm2.svg" alt="">
+                </div>
+                <div class="h-1/6 text-lg font-bold text-center flex items-end">Set Reunite Incentives</div>
+                <div class="h-2/6 text-[11px]">
+                    <label class="text-gray-500">
+                        Load rewards using the Noah’s Ark app for your Lost Pet Report. We encourage using our platform
+                        for safety and accountability—pet finders earn rewards, and points for our store. You can also
+                        arrange transport to reunite pets!
+                    </label>
+                </div>
+            </div>
+            <div
+                class="bg-gray-100 rounded-lg p-5 max-w-80 mx-auto h-[272px] transition-transform transform hover:scale-105 hover:shadow-lg">
+                <div class="h-3/6 flex items-center justify-center">
+                    <img src="./assets/tm3/tm3.svg" alt="">
+                </div>
+                <div class="h-1/6 text-lg font-bold text-center flex items-end">Print & Share Pet Flyers Pet</div>
+                <div class="h-2/6 text-[11px]">
+                    <label class="text-gray-500">
+                        Easily print, order, and distribute lost and found pet flyers from Noah's Ark Pet Connect. Post
+                        them in neighborhoods, vet clinics, coffee shops, and local businesses to help spread the word.
+                    </label>
+                </div>
+            </div>
+            <div
+                class="bg-gray-100 rounded-lg p-5 max-w-80 mx-auto h-[272px] transition-transform transform hover:scale-105 hover:shadow-lg">
+                <div class="h-3/6 flex items-center justify-center">
+                    <img src="./assets/tm3/tm4.svg" alt="">
+                </div>
+                <div class="h-1/6 text-lg font-bold text-center flex items-end">Arrange Lost Pet Transport</div>
+                <div class="h-2/6 text-[11px]">
+                    <label class="text-gray-500">
+                        Pre-arrange transportation for your pet to ensure a smooth reunion, whether it’s home delivery
+                        or to a shelter for later pickup. If you can’t pick up your pet right away, you can always
+                        arrange transport once they’re at the shelter.
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section 3 iframe -->
+    <div class="bg-gray-200 w-full h-[600px] grid grid-cols-1 justify-center">
+        <iframe width="100%" height="600px" src="https://petgoods.cc/product/calf-calmr-pellets"
+            style="border: 1px solid black"></iframe>
+    </div>
+    <!-- footer -->
+    <div class=" w-full  bg-gray-100">
+        <div class="flex flex-col max-w-7xl mx-auto h-[500px]">
+            <div class="h-2/6 flex items-center justify-start">
+
+            </div>
+            <div class="h-4/6 flex justify-center ">
+                <div
+                    class="bg-white rounded-t-xl h-full max-w-7xl w-full mx-5 sm:mx-0 sm:w-3/4 flex flex-col gap-5 items-center justify-between pt-10 px-5 pb-2">
+                    <div class="flex justify-center items-center gap-4">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </div>
+                    <label class="text-md sm:text-lg text-center">
+                        Use of this service, website, or application constitutes acceptance of all terms listed
+                        above.
+                        Petco
+                        Love Lost and its associated logos are trademarks of Petco Animal Supplies, Inc.™ 2024,
+                        Petco
+                        Love |
+                        Petco Animal Supplies, Inc. All rights reserved.
+                    </label>
+                    <label class="text-sm sm:text-lg  text-center">Privacy Policy | Terms of Service</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

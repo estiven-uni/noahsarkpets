@@ -172,26 +172,31 @@
             </ul>
         </div>
     </div>
-    <!-- section 1 banner -->
-    <div class="w-full max-h-[700px] min-h-[700px] flex  items-center justify-center text-white"
-        style="background-image: url('./assets/dog3.jpg'); background-size: cover; background-position: center;">
-        <div
-            class="bg-gray-100 bg-opacity-40 shadow-md backdrop-blur-sm w-[850px] min-h-[300px] p-5 sm:p-10 text-center flex flex-col gap-5 rounded-xl mx-5">
-            <label class="text-3xl sm:text-5xl text-center font-bold">
-                Where are you located?
-            </label>
-            <div class="sm:px-20">
-                <label class="text-lg sm:text-xl text-center text-white">
-                    You may provide the specific address. We will never share your exact location.
-                </label>
-            </div>
-            <div class="sm:px-20">                
-                <input type="text"
-                    class="h-12 bg-white bg-opacity-50 rounded-full p-2 w-full placeholder:text-center border-none focus:ring-2 focus:ring-pink-600 placeholder:text-gray-500 text-gray-800 px-4"
-                    placeholder="Search location (city, state, or Zip)">
-            </div>
-            <label class="text-xl text-pink-600 hover:text-pink-700 cursor-pointer underline">Use current
-                location</label>
+    <!-- section 1 banner -->    
+    <div class="h-[700px] min-h-[700px] flex  items-center justify-center text-white">        
+        <div class="relative bg-gray-800 h-full w-full">            
+            <div class="absolute inset-0">
+                <img src="./assets/dog3.jpg" class="w-full h-full object-cover " alt="">
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex items-center justify-center">
+                    <div class="bg-gray-100 bg-opacity-30 shadow-md backdrop-blur-sm w-auto max-w-[850px] min-h-[300px] p-5 sm:p-10 text-center flex flex-col gap-5 rounded-xl mx-5">
+                        <label class="text-3xl sm:text-5xl text-center font-bold">
+                            Where are you located?
+                        </label>
+                        <div class="sm:px-20">
+                            <label class="text-lg sm:text-xl text-center text-white">
+                                You may provide the specific address. We will never share your exact location.
+                            </label>
+                        </div>
+                        <div class="sm:px-20">                
+                            <input type="text"
+                                class="h-12 bg-white bg-opacity-50 rounded-full p-2 w-full placeholder:text-center border-none focus:ring-2 focus:ring-pink-600 placeholder:text-gray-500 text-gray-800 px-4"
+                                placeholder="Search location (city, state, or Zip)">
+                        </div>
+                        <label class="text-xl text-pink-600 hover:text-pink-700 cursor-pointer underline">Use current
+                            location</label>
+                    </div>
+                </div>
+            </div>            
         </div>
     </div>
     <!-- footer -->

@@ -173,29 +173,35 @@
         </div>
     </div>
     <!-- section 1 banner -->
-    <div class="w-full max-h-[700px] min-h-[700px] flex  items-center justify-center text-white"
-        style="background-image: url('./assets/dogBackground.jpg'); background-size: cover; background-position: center;">
-        <div
-            class="bg-gray-800 bg-opacity-30 shadow-md backdrop-blur-sm w-[850px] min-h-[300px] p-5 sm:p-10 text-center flex flex-col gap-5 rounded-xl mx-5">
-            <label class="text-3xl sm:text-5xl text-center font-bold">
-                Your Partner in Lost & Found Pets
-            </label>
-            <div class="sm:px-20">
-                <label class="text-lg sm:text-xl text-center text-gray-200">
-                    Noah’s Ark Pet Connect makes it easy to find lost pets and offers rewards to help bring them home.
-                </label>
-            </div>
-            <div class=" flex gap-5 justify-center">
-                <button
-                    class="bg-pink-500 text-white font-bold py-4 px-4 rounded-full hover:bg-pink-600 transition-transform transform hover:scale-105 hover:shadow-lg">Lost
-                    Pet
-                </button>
-                <button
-                    class="bg-pink-500 text-white font-bold py-4 px-4 rounded-full hover:bg-pink-600 transition-transform transform hover:scale-105 hover:shadow-lg">Found
-                    Pet
-                </button>
-            </div>
+    <div class="h-[700px] min-h-[700px] flex  items-center justify-center text-white">        
+        <div class="relative bg-gray-800 h-full w-full">            
+            <div class="absolute inset-0">
+                <img src="./assets/dogBackground.jpg" class="w-full h-full object-cover " alt="">
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex items-center justify-center">
+                    <div class="bg-gray-800 bg-opacity-30 shadow-md backdrop-blur-sm w-auto max-w-[850px] min-h-[300px] p-5 sm:p-10 text-center flex flex-col gap-5 rounded-xl mx-5">
+                        <label class="text-3xl sm:text-5xl text-center font-bold">
+                            Your Partner in Lost & Found Pets
+                        </label>
+                        <div class="sm:px-20">
+                            <label class="text-lg sm:text-xl text-center text-gray-200">
+                                Noah’s Ark Pet Connect makes it easy to find lost pets and offers rewards to help bring them home.
+                            </label>
+                        </div>
+                        <div class=" flex gap-5 justify-center">
+                            <button
+                                class="bg-pink-500 text-white font-bold py-4 px-4 rounded-full hover:bg-pink-600 transition-transform transform hover:scale-105 hover:shadow-lg">Lost
+                                Pet
+                            </button>
+                            <button
+                                class="bg-pink-500 text-white font-bold py-4 px-4 rounded-full hover:bg-pink-600 transition-transform transform hover:scale-105 hover:shadow-lg">Found
+                                Pet
+                            </button>
+                        </div>                    
+                    </div>
+                </div>
+            </div>            
         </div>
+    </div>
     </div>
     <!-- section 2 galery img -->
     <div class="w-full h-[500px] flex flex-col justify-center  gap-5 my-10">
@@ -255,8 +261,8 @@
 
     </div>
     <!-- section 3 text more img -->
-    <div class="w-full min-h-[700px] grid grid-cols-1 sm:grid-cols-2 justify-center">
-        <div class="bg-gray-100 p-10 flex flex-col gap-5 justify-center">
+    <div class="w-full min-h-[700px] grid grid-cols-1 sm:grid-cols-2 justify-center bg-gray-100 ">
+        <div class="p-10 flex flex-col gap-5 justify-center max-w-[650px] ml-auto">
             <label class="text-xl">It takes a village</label>
             <label class="text-6xl">Help pets get home</label>
             <label class="text-xl">
@@ -265,8 +271,10 @@
             </label>
             <label class="text-xl text-pink-500 hover:text-pink-700 cursor-pointer">Search All Lost & Found Pets</label>
         </div>
-        <div class="bg-gray-800 min-h-[400px] sm:h-auto"
-            style="background-image: url('./assets/imageHome1.png'); background-size: cover; background-position: center;">
+        <div class="relative bg-gray-800 min-h-[400px] sm:h-auto">
+            <div class="absolute inset-0">
+                <img src="./assets/imageHome1.png" class="w-full h-full object-cover " alt="">
+            </div>
         </div>
     </div>
     <!-- section 4 3 boxes -->
@@ -319,11 +327,13 @@
         </div>
     </div>
     <!-- section 5 text more img -->
-    <div class="w-full min-h-[700px] grid grid-cols-1 sm:grid-cols-2 sm:grid-flow-dense">
-        <div class="order-2 sm:order-1 bg-gray-800 min-h-[400px] sm:h-auto"
-            style="background-image: url('./assets/imageHome2.png'); background-size: cover; background-position: center;">
+    <div class="w-full min-h-[700px] grid grid-cols-1 sm:grid-cols-2 sm:grid-flow-dense bg-gray-100">
+        <div class="relative order-2 sm:order-1 bg-gray-800 min-h-[400px] sm:h-auto">
+            <div class="absolute inset-0">
+                <img src="./assets/imageHome2.png" class="w-full h-full object-cover " alt="">
+            </div>
         </div>
-        <div class="order-1 sm:order-2 bg-gray-100 p-10 flex flex-col gap-5 justify-center">
+        <div class="order-1 sm:order-2  p-10 flex flex-col gap-5 justify-center max-w-[650px] mr-auto">
             <label class="text-xl">Reunion Stories</label>
             <label class="text-6xl">Love Reunited</label>
             <label class="text-xl">

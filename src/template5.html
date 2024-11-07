@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body class="text-gray-800 bg-white">
+    <!-- header desktop -->
+    <div class="hidden md:block w-full fixed top-0 bg-white z-50 bg-opacity-80 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl h-20 flex items-center justify-between mx-auto px-10">
+            <!-- icono -->
+            <div class="">
+                <img src="./assets/logoNoahsArk.svg" alt="logo" class="h-20">
+            </div>
+            <!-- nav -->
+            <nav class="">
+                <ul class="flex items-center justify-center space-x-8">
+                    <li>
+                        <a href="#"
+                            class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                            <span class="mr-2">
+                                <!-- Icono para Reunite Tips -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a7 7 0 0 0-7 7c0 1.223.462 2.403 1.23 3.303.228.189.44.416.63.65C3.343 11.473 4 12.21 4 13v1a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-1c0-.79-.657-1.527-1.14-2.047.19-.234.402-.461.63-.65C14.538 9.403 15 8.223 15 7a7 7 0 0 0-7-7zm-1 7a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3zm5.854-.146a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708l2.5-2.5a.5.5 0 0 1 .708 0z" />
+                                </svg>
+                            </span>
+                            Reunite Tips
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                            <span class="mr-2">
+                                <!-- Icono para Found Pet Tips -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-paw" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 2c0 .55-.45 1-1 1S2 2.55 2 2s.45-1 1-1 1 .45 1 1zM12 2c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zM8 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 9c0 .55-.45 1-1 1S2 9.55 2 9s.45-1 1-1 1 .45 1 1zm8 0c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zm-4 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                            </span>
+                            Found Pet Tips
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                            <span class="mr-2">
+                                <!-- Icono para How to Help -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zM8 15a7 7 0 1 1 7-7A7 7 0 0 1 8 15zM8 4a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h1zm0 3.5a.5.5 0 0 0 .5-.5V7a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.5a.5.5 0 0 0 .5.5h1z" />
+                                </svg>
+                            </span>
+                            How to help?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-pink-600 hover:text-white hover:bg-pink-600 transition duration-300 ease-in-out border-pink-600 border-2 px-4 py-2 rounded-full font-bold flex items-center">
+                            <span class="mr-2">
+                                <!-- Icono para Members -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3 14s-1 0-1-1 1-1 1-1h10s1 0 1 1-1 1-1 1H3zm5-6a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0 1c-2.071 0-4 1.029-4 3v1h8v-1c0-1.971-1.929-3-4-3z" />
+                                </svg>
+                            </span>
+                            Members
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+    <!-- header mobile contenedor de todo el menu -->
+    <div class="w-full px-2 fixed top-4 z-50">
+        <div class="md:hidden w-full bg-white  bg-opacity-80 backdrop-blur-sm shadow-md rounded-full ">
+            <div class="h-20 flex flex-row-reverse items-center justify-between mx-auto px-6">
+                <!-- Icono que activa el menú -->
+                <label for="menu-toggle" class="h-20 w-20 flex items-center justify-end cursor-pointer">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7">
+                        </path>
+                    </svg>
+                </label>
+                <div class="h-20 w-20">
+                    <!-- Logo -->
+                    <img src="./assets/logoNoahsArk.svg" alt="logo" class="h-20">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header mobile input oculto que controla el modal -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer">
+    <!-- header mobile modal del menu, solo visible cuando el checkbox esta activado -->
+    <div class="fixed inset-0 z-40 hidden peer-checked:block">
+        <div
+            class="bg-gray-200 bg-opacity-60 backdrop-blur-md w-full h-full flex flex-col items-center justify-center space-y-4">
+            <ul class="space-y-12 text-center text-2xl">
+                <li>
+                    <a href="#"
+                        class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                        <span class="mr-2">
+                            <!-- Icono para Reunite Tips -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a7 7 0 0 0-7 7c0 1.223.462 2.403 1.23 3.303.228.189.44.416.63.65C3.343 11.473 4 12.21 4 13v1a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-1c0-.79-.657-1.527-1.14-2.047.19-.234.402-.461.63-.65C14.538 9.403 15 8.223 15 7a7 7 0 0 0-7-7zm-1 7a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3zm5.854-.146a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708l2.5-2.5a.5.5 0 0 1 .708 0z" />
+                            </svg>
+                        </span>
+                        Reunite Tips
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                        <span class="mr-2">
+                            <!-- Icono para Found Pet Tips -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-paw" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 2c0 .55-.45 1-1 1S2 2.55 2 2s.45-1 1-1 1 .45 1 1zM12 2c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zM8 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 9c0 .55-.45 1-1 1S2 9.55 2 9s.45-1 1-1 1 .45 1 1zm8 0c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zm-4 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                            </svg>
+                        </span>
+                        Found Pet Tips
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                        <span class="mr-2">
+                            <!-- Icono para How to Help -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zM8 15a7 7 0 1 1 7-7A7 7 0 0 1 8 15zM8 4a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h1zm0 3.5a.5.5 0 0 0 .5-.5V7a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.5a.5.5 0 0 0 .5.5h1z" />
+                            </svg>
+                        </span>
+                        How to help?
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-pink-500 hover:text-white hover:bg-pink-500 transition duration-300 ease-in-out border-pink-500 border-2 px-4 py-2 rounded-full font-bold flex items-center">
+                        <span class="mr-2">
+                            <!-- Icono para Members -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3 14s-1 0-1-1 1-1 1-1h10s1 0 1 1-1 1-1 1H3zm5-6a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0 1c-2.071 0-4 1.029-4 3v1h8v-1c0-1.971-1.929-3-4-3z" />
+                            </svg>
+                        </span>
+                        Members
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- section 1 text more img -->
+    <div class="w-full mt-20 grid grid-cols-1 mx-auto items-center">
+        <div class="flex flex-col text-center max-w-[800px] mx-auto py-10 gap-5 px-5">
+            <label class="text-3xl sm:text-5xl font-bold " for="">We’re here to help reunite the pet you found with
+                their owner</label>
+            <label class="text-xl sm:text-2xl" for="">If you are looking for your lost pet. Remain Calm. Here are some
+                useful tips.</label>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 justify-center  min-h-[700px] bg-gray-100">
+            <div class=" p-10 flex flex-col gap-5 justify-center max-w-[700px] mx-auto">
+                <label class="text-4xl sm:text-6xl">Report the pet</label>
+                <ul class="text-md sm:text-xl list-disc list-inside">
+                    <li>Download Noah’s Ark App if you don’t already have it.</li>
+                    <li>Create an account if not already & Toggle your Pet as Lost.</li>
+                    <li>Provide details, pictures of your pet, and instructions in case anyone finds your pet. You can
+                        also determine any incentives for anyone who helps you reunite.</li>
+                </ul>
+            </div>
+            <div class="relative bg-gray-800 min-h-[400px] sm:h-auto">
+                <div
+                    class="absolute w-full h-full bg-opacity-50 text-black z-20 justify-center items-center grid grid-cols-1 ">
+                    <div class="absolute inset-0 m-5">
+                        <img class="absolute bg-gray-100 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg object-cover h-full sm:h-auto max-h-[600px]"
+                            src="./assets/tm5/scre1.svg" class="" alt="image">
+                    </div>
+                </div>
+                <!-- <img class="absolute w-full h-full z-10 object-cover" src="./assets/dog2.jpg" class="" alt="image"> -->
+                <div class="absolute w-full h-full z-10 bg-white" class="" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section 2 text more img -->
+    <div class="w-full min-h-[700px] grid grid-cols-1 sm:grid-cols-2 sm:grid-flow-dense bg-gray-100">
+        <div class="order-1 sm:order-2 p-10 flex flex-col gap-5 justify-center max-w-[700px] mx-auto">
+            <label class="text-4xl sm:text-6xl">Alert your Community</label>
+            <ul class="text-md sm:text-xl list-disc list-inside">
+                <li>Print Flyers, and Posters and distribute to your community.</li>
+                <li>Share Flyers and Posters on Social Media.</li>
+                <li>Ask your friendly neighbors to download Noahs Ark App & if they have seen anything.</li>
+            </ul>
+        </div>
+        <div class="order-2 sm:order-1 relative bg-gray-800 min-h-[400px] sm:h-auto">
+            <div
+                class="absolute w-full h-full bg-opacity-50 text-black z-20 justify-center items-center grid grid-cols-1 ">
+                <div class="absolute inset-0 m-5">
+                    <img class="absolute  left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg object-cover h-full sm:h-auto max-h-[600px]"
+                        src="./assets/tm5/scre2.svg" class="" alt="image">
+                </div>
+            </div>
+            <!-- <img class="absolute w-full h-full z-10 object-cover" src="./assets/dog2.jpg" class="" alt="image"> -->
+            <div class="absolute w-full h-full z-10 bg-white" class="" alt="image">
+            </div>
+        </div>
+    </div>
+
+    <!-- section 3 text more img -->
+    <div class="w-full min-h-[700px] grid grid-cols-1 sm:grid-cols-2 sm:grid-flow-dense bg-gray-100">
+        <div class="relative  p-10 flex flex-col gap-5 justify-center max-w-[700px] mx-auto">
+            <label class="text-4xl sm:text-6xl">Coordinate Reunite</label>
+            <ul class="text-md sm:text-xl list-disc list-inside">
+                <li>Share your Pet’s reunite location or request a reunite location.</li>
+                <li>Suggest a nearby Shelter for Drop-off.</li>
+                <li>Optionally, arrange a Pet Transport to your home delivery.</li>
+            </ul>
+        </div>
+        <div class="relative bg-gray-800 min-h-[400px] sm:h-auto">
+            <div
+                class="absolute w-full h-full bg-opacity-50 text-black z-20 justify-center items-center grid grid-cols-1 ">
+                <div class="absolute inset-0 m-5">
+                    <img class="absolute bg-gray-100 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg object-cover h-full sm:h-auto max-h-[600px]"
+                        src="./assets/tm5/scre3.svg" class="" alt="image">
+                </div>
+            </div>
+            <!-- <img class="absolute w-full h-full z-10 object-cover" src="./assets/dog2.jpg" class="" alt="image"> -->
+            <div class="absolute w-full h-full z-10 bg-white" class="" alt="image">
+            </div>
+        </div>
+    </div>
+    <!-- section 4 text more img -->
+    <div class="w-full min-h-[700px] grid grid-cols-1 sm:grid-cols-2 sm:grid-flow-dense bg-gray-100">
+        <div class="relative order-1 sm:order-2 p-10 flex flex-col gap-5 justify-center max-w-[700px] mx-auto">
+            <label class="text-4xl sm:text-6xl">Pick up at Reunite</label>
+            <ul class="text-md sm:text-xl list-disc list-inside">
+                <li>Ensure Reunite point is a safe location.</li>
+                <li>Receive Pet from Pet Finder by Scanning Pet with your Noah’s Ark App.</li>
+                <li>Confirm Reunite & Release Rewards (if any).</li>
+            </ul>
+        </div>
+        <div class="relative order-2 sm:order-1 bg-gray-800 min-h-[400px] sm:h-auto">
+            <div
+                class="absolute w-full h-full bg-opacity-50 text-black z-20 justify-center items-center grid grid-cols-1 ">
+                <div class="absolute inset-0 m-5">
+                    <img class="absolute bg-gray-100 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg object-cover h-full sm:h-auto max-h-[600px]"
+                        src="./assets/tm5/scre4.svg" class="" alt="image">
+                </div>
+            </div>
+            <!-- <img class="absolute w-full h-full z-10 object-cover" src="./assets/dog2.jpg" class="" alt="image"> -->
+            <div class="absolute w-full h-full z-10 bg-white" class="" alt="image">
+            </div>
+        </div>
+    </div>
+    <!-- section 5 text more img -->
+    <div class="w-full min-h-[700px] grid grid-cols-1 sm:grid-cols-2 sm:grid-flow-dense bg-gray-100">
+        <div class="relative  p-10 flex flex-col gap-5 justify-center max-w-[700px] mx-auto">
+            <label class="text-4xl sm:text-6xl">Pick up from Shelter</label>
+            <ul class="text-md sm:text-xl list-disc list-inside">
+                <li>Contact No Kill Shelter Animal Shelter about Lost Animal.</li>
+                <li>Determine if you can Pick Up or Request a Pet Reunite Delivery.</li>
+                <li>Receive Pet from Shelter by Scanning Pet with your Noah’s Ark App.</li>
+                <li>Confirm & Release PawBucks Rewards.</li>
+            </ul>
+        </div>
+        <div class="relative bg-gray-800 min-h-[400px] sm:h-auto">
+            <div
+                class="absolute w-full h-full bg-opacity-50 text-black z-20 justify-center items-center grid grid-cols-1 ">
+                <div class="absolute inset-0 m-5">
+                    <img class="absolute bg-gray-100 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg object-cover h-full sm:h-auto max-h-[600px]"
+                        src="./assets/tm5/scre5.svg" class="" alt="image">
+                </div>
+            </div>
+            <!-- <img class="absolute w-full h-full z-10 object-cover" src="./assets/dog2.jpg" class="" alt="image"> -->
+            <div class="absolute w-full h-full z-10 bg-white" class="" alt="image">
+            </div>
+        </div>
+    </div>
+    <!-- section 6 text more img -->
+    <div class="w-full min-h-[700px] grid grid-cols-1 sm:grid-cols-2 sm:grid-flow-dense bg-gray-100">
+        <div class="relative order-1 sm:order-2 p-10 flex flex-col gap-5 justify-center max-w-[700px] mx-auto">
+            <label class="text-4xl sm:text-6xl">Auto Pet Reunite Delivery</label>
+            <ul class="text-md sm:text-xl list-disc list-inside">
+                <li>Members only feature which allows for an automatic dispatch to transport Lost Pet to reunite No Kill
+                    Shelter, or to Home delivery (Signer Required).</li>
+                <li>Allow Pet Finders to Pet Transport & relocate Pet to No Kill Animal Shelter if you are unable to
+                    reunite on demand.</li>
+                <li>Pet Finder may request Pet Transport, charges and fees must be prepaid in order to complete a Pet
+                    Transport Reunite Delivery.</li>
+            </ul>
+        </div>
+        <div class="relative order-2 sm:order-1 bg-gray-800 min-h-[400px] sm:h-auto">
+            <div
+                class="absolute w-full h-full bg-opacity-50 text-black z-20 justify-center items-center grid grid-cols-1 ">
+                <div class="absolute inset-0 m-5">
+                    <img class="absolute bg-gray-100 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg object-cover h-full sm:h-auto max-h-[600px]"
+                        src="./assets/tm5/scre6.svg" class="" alt="image">
+                </div>
+            </div>
+            <!-- <img class="absolute w-full h-full z-10 object-cover" src="./assets/dog2.jpg" class="" alt="image"> -->
+            <div class="absolute w-full h-full z-10 bg-white" class="" alt="image">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class=" w-full  bg-gray-100">
+        <div class="flex flex-col max-w-7xl mx-auto h-[500px]">
+            <div class="h-2/6 flex items-center justify-start">
+
+            </div>
+            <div class="h-4/6 flex justify-center ">
+                <div
+                    class="bg-white rounded-t-xl h-full max-w-7xl w-full mx-5 sm:mx-0 sm:w-3/4 flex flex-col gap-5 items-center justify-between pt-10 px-5 pb-2">
+                    <div class="flex justify-center items-center gap-4">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </div>
+                    <label class="text-md sm:text-lg text-center">
+                        Use of this service, website, or application constitutes acceptance of all terms listed
+                        above.
+                        Petco
+                        Love Lost and its associated logos are trademarks of Petco Animal Supplies, Inc.™ 2024,
+                        Petco
+                        Love |
+                        Petco Animal Supplies, Inc. All rights reserved.
+                    </label>
+                    <label class="text-sm sm:text-lg  text-center">Privacy Policy | Terms of Service</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

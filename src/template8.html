@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        input:focus {
+            outline: none;
+        }
+        .li {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: medium;
+        }
+        .span {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body class="text-gray-800 bg-gray-50">
+    <!-- HEADER -->
+    <div class="">
+        <!-- header desktop -->
+        <div class="hidden md:block w-full fixed top-0 bg-white z-50 bg-opacity-80 backdrop-blur-sm shadow-sm">
+            <div class="max-w-7xl h-20 flex items-center justify-between mx-auto px-10">
+                <!-- icono -->
+                <div class="">
+                    <img src="./assets/logoNoahsArk.svg" alt="logo" class="h-20">
+                </div>
+                <!-- nav -->
+                <nav class="">
+                    <ul class="flex items-center justify-center space-x-8">
+                        <li>
+                            <a href="#"
+                                class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                                <span class="mr-2">
+                                    <!-- Icono para Reunite Tips -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0a7 7 0 0 0-7 7c0 1.223.462 2.403 1.23 3.303.228.189.44.416.63.65C3.343 11.473 4 12.21 4 13v1a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-1c0-.79-.657-1.527-1.14-2.047.19-.234.402-.461.63-.65C14.538 9.403 15 8.223 15 7a7 7 0 0 0-7-7zm-1 7a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3zm5.854-.146a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708l2.5-2.5a.5.5 0 0 1 .708 0z" />
+                                    </svg>
+                                </span>
+                                Reunite Tips
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                                <span class="mr-2">
+                                    <!-- Icono para Found Pet Tips -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-paw" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 2c0 .55-.45 1-1 1S2 2.55 2 2s.45-1 1-1 1 .45 1 1zM12 2c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zM8 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 9c0 .55-.45 1-1 1S2 9.55 2 9s.45-1 1-1 1 .45 1 1zm8 0c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zm-4 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </span>
+                                Found Pet Tips
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                                <span class="mr-2">
+                                    <!-- Icono para How to Help -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-question-circle" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zM8 15a7 7 0 1 1 7-7A7 7 0 0 1 8 15zM8 4a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h1zm0 3.5a.5.5 0 0 0 .5-.5V7a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.5a.5.5 0 0 0 .5.5h1z" />
+                                    </svg>
+                                </span>
+                                How to help?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-pink-600 hover:text-white hover:bg-pink-600 transition duration-300 ease-in-out border-pink-600 border-2 px-4 py-2 rounded-full font-bold flex items-center">
+                                <span class="mr-2">
+                                    <!-- Icono para Members -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 14s-1 0-1-1 1-1 1-1h10s1 0 1 1-1 1-1 1H3zm5-6a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0 1c-2.071 0-4 1.029-4 3v1h8v-1c0-1.971-1.929-3-4-3z" />
+                                    </svg>
+                                </span>
+                                Members
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+        <!-- header mobile contenedor de todo el menu -->
+        <div class="w-full px-2 fixed top-4 z-50">
+            <div class="md:hidden w-full bg-white  bg-opacity-80 backdrop-blur-sm shadow-md rounded-full ">
+                <div class="h-20 flex flex-row-reverse items-center justify-between mx-auto px-6">
+                    <!-- Icono que activa el menú -->
+                    <label for="menu-toggle" class="h-20 w-20 flex items-center justify-end cursor-pointer">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7">
+                            </path>
+                        </svg>
+                    </label>
+                    <div class="h-20 w-20">
+                        <!-- Logo -->
+                        <img src="./assets/logoNoahsArk.svg" alt="logo" class="h-20">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header mobile input oculto que controla el modal -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+        <!-- header mobile modal del menu, solo visible cuando el checkbox esta activado -->
+        <div class="fixed inset-0 z-40 hidden peer-checked:block">
+            <div
+                class="bg-gray-200 bg-opacity-60 backdrop-blur-md w-full h-full flex flex-col items-center justify-center space-y-4">
+                <ul class="space-y-12 text-center text-2xl">
+                    <li>
+                        <a href="#"
+                            class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                            <span class="mr-2">
+                                <!-- Icono para Reunite Tips -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a7 7 0 0 0-7 7c0 1.223.462 2.403 1.23 3.303.228.189.44.416.63.65C3.343 11.473 4 12.21 4 13v1a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-1c0-.79-.657-1.527-1.14-2.047.19-.234.402-.461.63-.65C14.538 9.403 15 8.223 15 7a7 7 0 0 0-7-7zm-1 7a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3zm5.854-.146a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708l2.5-2.5a.5.5 0 0 1 .708 0z" />
+                                </svg>
+                            </span>
+                            Reunite Tips
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                            <span class="mr-2">
+                                <!-- Icono para Found Pet Tips -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-paw" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 2c0 .55-.45 1-1 1S2 2.55 2 2s.45-1 1-1 1 .45 1 1zM12 2c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zM8 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 9c0 .55-.45 1-1 1S2 9.55 2 9s.45-1 1-1 1 .45 1 1zm8 0c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zm-4 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                            </span>
+                            Found Pet Tips
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-gray-800 hover:text-pink-500 transition duration-300 ease-in-out flex items-center">
+                            <span class="mr-2">
+                                <!-- Icono para How to Help -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zM8 15a7 7 0 1 1 7-7A7 7 0 0 1 8 15zM8 4a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h1zm0 3.5a.5.5 0 0 0 .5-.5V7a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.5a.5.5 0 0 0 .5.5h1z" />
+                                </svg>
+                            </span>
+                            How to help?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-pink-500 hover:text-white hover:bg-pink-500 transition duration-300 ease-in-out border-pink-500 border-2 px-4 py-2 rounded-full font-bold flex items-center">
+                            <span class="mr-2">
+                                <!-- Icono para Members -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3 14s-1 0-1-1 1-1 1-1h10s1 0 1 1-1 1-1 1H3zm5-6a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0 1c-2.071 0-4 1.029-4 3v1h8v-1c0-1.971-1.929-3-4-3z" />
+                                </svg>
+                            </span>
+                            Members
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- section 1 banner -->
+    <div class="flex flex-col text-center max-w-[800px] mx-auto py-10 gap-5 px-5 mt-20 ">
+        <label class="text-3xl sm:text-5xl font-bold " for="">Noah's Ark Pet Owners and Pets Privacy Policy</label>
+        <!-- <label class="text-xl sm:text-2xl" for="">Last Revised: 11/01/2024.</label> -->
+    </div>
+
+    <!-- section 2 -->
+    <div class="flex flex-col max-w-[800px] mx-auto py-10 gap-5 px-5">
+        <label class="text-md sm:text-md flex justify-start flex-col" for="">
+            At Noah's Ark, we understand the importance of protecting the privacy of pet owners and their
+            pets. This Privacy Policy outlines the information that we collect, how we use it, and the
+            measures we take to ensure that your information is protected.
+            Information Collected.
+            <br>
+            <span class="span">We may collect the following types of information from pet owners and their pets:</span>
+            <br>
+            <li class="li">
+                Personal Information: This includes information that can identify you, such as your
+                name, email address, and location.
+            </li>
+            <li class="li">
+                Pet Information: This includes information about your pet, such as its name, breed, age,
+                and photo.
+            </li>
+
+
+            <li class="li">
+                Diet Information: This includes information about your pet's dietary preferences and
+                restrictions.
+            </li>
+
+
+            <li class="li">
+                Vaccination Information: This includes information about your pet's vaccines and their
+                status.
+            </li>
+
+
+            <li class="li">
+                Illness Information: This includes information about your pet's health and any illnesses
+                they may have.
+            </li>
+
+            <li class="li">
+                Care Information: This includes information about your pet's care preferences and
+                routines.
+            </li>
+
+            <li class="li">
+                Treat Information: This includes information about your pet's favorite treats.
+            </li>
+
+            <li class="li">
+                Interest Information: This includes information about your pet's interests and activities.
+            </li>
+
+            <li class="li">
+                Activity Information: This includes information about your pet's daily activities and
+                routines.
+            </li>
+
+            <li class="li">
+                Location Information: This includes information about your pet's location, including GPS
+                coordinates and location history.
+            </li>
+
+            <li class="li">
+                Matching Information: This includes information used to match pet owners and their pets
+                based on compatibility.
+            </li>
+
+            <li class="li">
+                Profile Information: This includes information you provide when creating a profile on
+                Noah's Ark, such as your pet's name, breed, and photo.
+                Use of Information
+            </li>
+
+            <br>
+            <span class="span">We may use the information we collect for various purposes, including:</span>
+            <li class="li">
+                To provide, maintain, and improve Noah's Ark;
+            </li>
+
+            <li class="li">
+                To match pet owners and their pets based on compatibility;
+            </li>
+
+            <li class="li">To personalize your experience on Noah's Ark and facilitate interactions between pet
+                owners and their pets;
+            </li>
+
+            <li class="li">
+                To send you notifications and updates;
+            </li>
+
+            <li class="li">
+                For commercial purposes, such as marketing and advertising;
+            </li>
+            <li class="li">
+                To comply with legal obligations;
+            </li>
+            <li class="li">To enforce this Privacy Policy and Noah's Ark's Terms of Service.
+                Disclosure of Information
+            </li>
+            <br>
+            <span class="span">We may disclose your information to third parties in the following circumstances:</span>
+            <li class="li">To third-party service providers, such as hosting providers and payment processors,
+                who may process your information on our behalf;</li>
+            <li class="li">To comply with legal obligations, such as a subpoena or court order;</li>
+            <li class="li">To protect the rights, property, or safety of Noah's Ark, its users, or the public;</li>
+            <li class="li">In connection with a merger, acquisition, or sale of Noah's Ark or its assets;</li>
+            <li class="li">With your consent.</li>
+            <br>
+            Security of Information
+            We take reasonable measures to protect the security of your information, including using
+            encryption technologies and implementing security controls. However, no method of transmitting
+            or storing data is completely secure, and we cannot guarantee the security of your information.
+            Location Sharing
+            By using Noah's Ark, you consent to the sharing of your location information with other users.
+            You may control the sharing of your location information by adjusting the privacy settings in your
+            device or within Noah's Ark.
+            Changes to This Privacy Policy
+            We may update this Privacy Policy from time to time. The most current version of the Privacy
+            Policy will be available on Noah's Ark's website. By continuing to use Noah's Ark after any
+            changes have been made, you consent to the updated Privacy Policy.
+            Contact Us
+            If you have any questions or concerns about this Privacy Policy, please contact us at
+            support@noahsarkpets.net or privacypolicy@noahsarkpets.net
+        </label>
+    </div>
+
+    <!-- footer -->
+    <div class=" w-full  bg-gray-100">
+        <div class="flex flex-col max-w-7xl mx-auto h-[500px]">
+            <div class="h-2/6 flex items-center justify-start">
+
+            </div>
+            <div class="h-4/6 flex justify-center ">
+                <div
+                    class="bg-white rounded-t-xl h-full max-w-7xl w-full mx-5 sm:mx-0 sm:w-3/4 flex flex-col gap-5 items-center justify-between pt-10 px-5 pb-2">
+                    <div class="flex justify-center items-center gap-4">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </div>
+                    <label class="text-md sm:text-lg text-center">
+                        Use of this service, website, or application constitutes acceptance of all terms listed above.
+                        Petco
+                        Love Lost and its associated logos are trademarks of Petco Animal Supplies, Inc.™ 2024, Petco
+                        Love |
+                        Petco Animal Supplies, Inc. All rights reserved.
+                    </label>
+                    <label class="text-sm sm:text-lg  text-center">Privacy Policy | Terms of Service</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
